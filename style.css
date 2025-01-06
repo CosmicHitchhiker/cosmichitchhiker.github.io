@@ -1,0 +1,43 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+
+.w3-bar .w3-button{
+    padding: 16px;
+}
+
+body {
+    background-color: #000000;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: auto 100vh;
+}
+
+@media (min-aspect-ratio: 3/2) {
+    body {
+        background-size: 100vw auto;
+    }
+}
+
+@media (max-aspect-ratio: 3/2) {
+    body {
+        background-size: auto 100vh;
+    }
+}
+
+#full-page {
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#main-content {
+    background-color: rgba(200, 200, 200, 0.8);
+    padding-top: 20px;
+    flex: 1;
+}

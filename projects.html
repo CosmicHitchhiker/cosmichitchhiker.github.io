@@ -1,0 +1,143 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <style>
+
+
+        .w3-card-4 {
+            margin: 20px;
+            background: rgba(200, 200, 200, 1);
+            transition: transform .2s;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .w3-card-4:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+
+<body>
+    <!-- Page content -->
+    <div class="w3-content" id="full-page">
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-bar w3-black w3-card" id="myNavbar">
+        <a href="index.html" class="w3-bar-item w3-wide w3-button"> Vsevolod Yu. Lander </a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small w3-hide-medium">
+        <a href="about.html" class="w3-bar-item w3-button"> About me </a>
+        <a href="projects.html" class="w3-bar-item w3-button"> Projects </a>
+        <a href="outreach.html" class="w3-bar-item w3-button"> Outreach </a>
+        <a href="hobbies.html" class="w3-bar-item w3-button"> Hobbies </a>
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-right w3-hide-large" style="display:none;right:0;" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16"> Close ×</a>
+    <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button"> About me </a>
+    <a href="projects.html" onclick="w3_close()" class="w3-bar-item w3-button"> Projects </a>
+    <a href="outreach.html" onclick="w3_close()" class="w3-bar-item w3-button"> Outreach </a>
+    <a href="hobbies.html" onclick="w3_close()" class="w3-bar-item w3-button"> Hobbies </a>
+    </nav>
+
+
+
+    <div class="w3-container" id="main-content">
+
+    <div class="w3-container w3-row">
+
+        <a href="https://github.com/CosmicHitchhiker/los_to_rc" class="w3-half">
+         <div class="w3-card-4" style="max-width: 100%">
+            <img src="los.jpg" alt="Rotation curve">
+            <div class="w3-container">
+                <h4>los_to_rc</h4>
+                <p>Tool to transform los to rc</p>
+            </div>
+        </div>
+        </a>
+
+        <a href="https://github.com/CosmicHitchhiker/FindSlit" class="w3-half">
+         <div class="w3-card-4" style="max-width: 100%">
+            <img src="find_slit.jpg" alt="Slit position">
+            <div class="w3-container">
+                <h4>find_slit</h4>
+                <p>Tool to find slit</p>
+            </div>
+        </div>
+        </a>
+
+    </div>
+
+    <div class="w3-container w3-row">
+
+        <a href="short.csv" class="w3-half">
+         <div class="w3-card-4" style="max-width: 100%">
+            <img src="A0V.jpg" alt="List of standarts">
+            <div class="w3-container">
+                <h4>A0V</h4>
+                <p>Telluric standards</p>
+            </div>
+        </div>
+        </a>
+
+        <a href="https://github.com/CosmicHitchhiker/andor-cameras" class="w3-half">
+         <div class="w3-card-4" style="max-width: 100%">
+            <img src="TDS.jpg" alt="Transient double-beam spectrograph">
+            <div class="w3-container">
+                <h4>Andor daemon</h4>
+                <p>Tool to control andor cameras</p>
+            </div>
+        </div>
+        </a>
+
+    </div>
+
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black" style="padding: 16px; bottom: 0;">
+    <p>Do whatever you desire</p>
+    </footer>
+
+    </div>
+
+    <script>
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+
+    function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+        mySidebar.style.display = "none";
+    }
+    </script>
+</body>
+</html>
