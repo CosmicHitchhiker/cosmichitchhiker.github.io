@@ -1,0 +1,5 @@
+span.rev { unicode-bidi:bidi-override; direction:rtl }
+span.rev.email:before { content:"moc.liamg@" }
+span.rev.email:after { content:"uyvrednal" }
+span.rev.phone:before { content:"334305" }
+span.rev.phone:after { content:"25897+" }
